@@ -10,10 +10,7 @@ int choise2;
 
 int main() {
     bar();
-    printf("1.Login\n");
-    printf("2.Register\n");
-    printf("Enter your choice : ");
-    scanf("%d",&choise);
+   choise=main_menu();
     switch (choise) {
         case 1:
             clear();

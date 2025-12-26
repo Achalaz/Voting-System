@@ -21,12 +21,13 @@ int voter_Reg() {
     scanf("%s",pw);
     printf("Enter Age :\n");
     scanf("%d",&age);
+    printf("Registration Successful\n");
     if(age>=18){
         fp=fopen("Data/voter.txt","a");
         if(fp==NULL){
             printf("Can not open file");
         }
-        fprintf(fp,"%s,%s,%s\n",name,pw,Nic);
+        fprintf(fp,"%s,%s,%s\n",Nic,name,pw);
     }else{
         printf("You are not eligible");
     }
